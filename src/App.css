@@ -14,7 +14,21 @@ body {
     font-size: 1.5rem;
 }
 
-h1 {
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20vw;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container h1 {
     animation: grow 1s forwards;
 }
 
@@ -27,15 +41,6 @@ h1 {
     }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20vw;
-    padding: 0 40px;
-    justify-content: center;
-    align-items: center;
-}
-
 #question {
     font-size: 90px;
     font-weight: bold;
@@ -45,9 +50,4 @@ h1 {
 
 .incorrect {
     color: red;
-}
-
-.container input {
-    margin-bottom: 20px;
-    padding: 20px;
 }

@@ -18,7 +18,6 @@ function App() {
     default:
   }
   const [state,setState] = useState({
-    page: "page1",
     num1: num1,
     num2: num2,
     operator: operator,
@@ -57,38 +56,35 @@ function App() {
           incorrect: false,
           warning: ""
         })
-        e.target.value=""
       } else if (e.target.value === "") {
-        setState({
-          ...state,
-          warning: "請輸入答案"
-        })
+          setState({
+            ...state,
+            warning: "請輸入答案"
+          })
+      } else {
+          if (state.score > 0) {
+            setState({
+              ...state,
+              score: state.score - 1,
+              incorrect: true,
+              warning: ""
+            })
+          } else {
+              setState({
+                ...state,
+                incorrect: true,
+                warning: ""
+              })
+          }
       }
-      else {
-        if (state.score > 0) {
-          setState({
-            ...state,
-            score: state.score - 1,
-            incorrect: true,
-            warning: ""
-          })
-        } else {
-          setState({
-            ...state,
-            incorrect: true,
-            warning: ""
-          })
-        }
-    }
     }
   }
 
-  function StartPage() {
+  function MainPage() {
     return (
       <div className="container">
-        <div>{state.timer}</div>
         <div id="question" className={state.incorrect ? "incorrect" : ""}>{state.num1}{state.operator}{state.num2}</div>
-        <input autoFocus onKeyPress={inputKeyPress} placeholder={state.warning}></input>
+        <input autoFocus onKeyPress={inputKeyPress} placeholder={state.warning} type="text"></input>
         <div>分數: {state.score}</div>
       </div>
     );
@@ -97,7 +93,7 @@ function App() {
   function WinPage() {
     return (
       <div className="container"> 
-        <h1 className="animate__zoomInDown">you win!!</h1>
+        <h1>you win!!</h1>
       </div>
       )
   }
@@ -105,7 +101,7 @@ function App() {
   if (state.score >= 5) {
     return <WinPage/>
   } else {
-    return <StartPage/>
+    return <MainPage/>
   }
 }
 
