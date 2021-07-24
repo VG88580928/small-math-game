@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/small-math-game/static/css/main.d24bd981.chunk.css",
-    "main.js": "/small-math-game/static/js/main.99c313cc.chunk.js",
-    "main.js.map": "/small-math-game/static/js/main.99c313cc.chunk.js.map",
+    "main.css": "/small-math-game/static/css/main.a5ed3ed9.chunk.css",
+    "main.js": "/small-math-game/static/js/main.fa3c11a6.chunk.js",
+    "main.js.map": "/small-math-game/static/js/main.fa3c11a6.chunk.js.map",
     "runtime-main.js": "/small-math-game/static/js/runtime-main.4156d2cf.js",
     "runtime-main.js.map": "/small-math-game/static/js/runtime-main.4156d2cf.js.map",
     "static/js/2.23dbc09d.chunk.js": "/small-math-game/static/js/2.23dbc09d.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.91cd94b3.chunk.js": "/small-math-game/static/js/3.91cd94b3.chunk.js",
     "static/js/3.91cd94b3.chunk.js.map": "/small-math-game/static/js/3.91cd94b3.chunk.js.map",
     "index.html": "/small-math-game/index.html",
-    "static/css/main.d24bd981.chunk.css.map": "/small-math-game/static/css/main.d24bd981.chunk.css.map",
+    "static/css/main.a5ed3ed9.chunk.css.map": "/small-math-game/static/css/main.a5ed3ed9.chunk.css.map",
     "static/js/2.23dbc09d.chunk.js.LICENSE.txt": "/small-math-game/static/js/2.23dbc09d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4156d2cf.js",
     "static/js/2.23dbc09d.chunk.js",
-    "static/css/main.d24bd981.chunk.css",
-    "static/js/main.99c313cc.chunk.js"
+    "static/css/main.a5ed3ed9.chunk.css",
+    "static/js/main.fa3c11a6.chunk.js"
   ]
 }
