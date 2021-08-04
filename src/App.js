@@ -90,10 +90,15 @@ function App() {
     );
   }
 
+  function restart() {
+    setState({...state,score: 0})
+  }
+
   function WinPage() {
     return (
       <div className="container"> 
         <h1>you win!!</h1>
+        <button onClick={restart}>Restart</button>
       </div>
       )
   }
