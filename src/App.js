@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 import './App.css';
 
 function App() {
+  // 此段code重複出現了兩次，這邊第一次是為了確保剛進頁面時第一道題為隨機題目,只負責生成第1道題
   let num1 = Math.ceil(Math.random() * 10)
   let num2 = Math.ceil(Math.random() * 10)
   let operator
@@ -31,6 +32,7 @@ function App() {
     let response = parseInt(e.target.value)
     if (e.key === "Enter") {
       if (response === state.answer) {
+        // 這邊是答對題目後生成新題目，所以負責生成第2~無限題
         let num1 = Math.ceil(Math.random() * 10)
         let num2 = Math.ceil(Math.random() * 10)
         let operator
@@ -62,6 +64,7 @@ function App() {
             warning: "請輸入答案"
           })
       } else {
+        // 這邊確保分數不會降至0分以下
           if (state.score > 0) {
             setState({
               ...state,
@@ -90,6 +93,7 @@ function App() {
     );
   }
 
+  // 分數規0，自動返回主頁面
   function restart() {
     setState({...state,score: 0})
   }
