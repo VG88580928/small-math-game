@@ -86,6 +86,7 @@ function App() {
   function MainPage() {
     return (
       <div className="container">
+        <h2>勝利條件:得到5分</h2>
         <div id="question" className={state.incorrect ? "incorrect" : ""}>{state.num1}{state.operator}{state.num2}</div>
         <input autoFocus onKeyPress={inputKeyPress} placeholder={state.warning} type="text"></input>
         <div>分數: {state.score}</div>
