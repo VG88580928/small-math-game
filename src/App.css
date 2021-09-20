@@ -17,7 +17,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin: 0 20vw;
     padding: 0 40px;
     justify-content: center;
     align-items: center;
@@ -34,10 +33,10 @@ body {
 
 @keyframes grow {
     0% {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     100% {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
